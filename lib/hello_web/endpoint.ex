@@ -57,8 +57,8 @@ defmodule HelloWeb.Endpoint do
         |> Keyword.put(:http, [:inet, port: (get_env!("PORT") |> String.to_integer)])
         |> Keyword.put(:secret_key_base, get_env!("SECRET_KEY_BASE"))
         
-      IO.inspect(config)
-      IO.puts "Using port #{config |> Keyword.get(:url) |> Keyword.get(:host)}:#{config |> Keyword.get(:http) |> Keyword.get(:port)}"
+      # IO.inspect(config)
+      # IO.puts "Using port #{config |> Keyword.get(:url) |> Keyword.get(:host)}:#{config |> Keyword.get(:http) |> Keyword.get(:port)}"
 
       {:ok, config}
     else
